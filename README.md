@@ -63,7 +63,8 @@
 - 가상환경은 깃허브에 올라가지 않도록 처리
 - .gitignore에 /mlvenv 추가 후 깃허브에 우선 푸시
 
-- 맷플롯립 설치
+
+- 맷플롯립(Matplotlib) 설치
 ```shell
 > pip install matplotlib
 ```
@@ -76,6 +77,11 @@ font_path = 'C:/Windows/Fonts/NanumGothicCoding.ttf' # 나눔고딕코딩 사용
 font = font_manager.FontProperties(fname=font_path).get_name() # 실제 설치된 폰트 이름조회
 rc('font', family=font) # 한글깨짐현상 해결!!
 rcParams['axes.unicode_minus'] = False # 한글 사용시 마이너스 표시 깨짐 해결!
+```
+
+- 시본9Seaborn) 모듈(맷플롯립 하위 모듈) 설치
+```shell
+>pip install seaborn
 ```
 
 - 사이킷런 설치
@@ -94,6 +100,8 @@ rcParams['axes.unicode_minus'] = False # 한글 사용시 마이너스 표시 �
 
 - 길이를 보고 도미(bream)인지 빙어(smelt)인지 판별
 - 이진 분류(Binary Classification)
+
+- [노트북](./day01/mldl01_도미빙어분류.ipynb)
 
 ### 지도 학습/ 비지도 학습
 - 지도 학습(unsupervised learn) - 데이터 -> `입력`, 정답 -> `타겟` => 훈련 데이터(training data)
@@ -120,9 +128,24 @@ rcParams['axes.unicode_minus'] = False # 한글 사용시 마이너스 표시 �
 - 수학 라이브러리 일종. 파이썬에서 배열처리 쉽게 도와주기 위해 개발
 - 2차원 배열이상 고차원 배열 조작 처리 간편한 도구
 
-- 시본 모듈(맷플롯립 하위 모듈) 설치
-```shell
->pip install seaborn
-```
+- [노트북](./day01/mldl02_훈련테스트세트.ipynb)
+
+## 2일차
+
+### 데이터 전처리
+
+### 선형회귀
+
+### 로지스틱회귀
+
+### 확률적 경사하강법
+
+### 인공신경망
+
+### 심층신경망
+
+### 합성곱신경망
+
+### 순차데이터와 순환신경망
 
 ## 8일차
